@@ -58,7 +58,7 @@ class LinkedList
         }
     }
     //deletion
-    void del(){
+    void del(int value){
         //store tail in temp
         Node* temp = tail;
         //Node before tail has to point to NULL
@@ -78,8 +78,9 @@ class LinkedList
         int i =1;
         while(i<pos-1){
         i++;
-        current = current->next;
-    }    //Counting the number of items in the list
+        current = current->next;}
+    }    
+    //Counting the number of items in the list
         void countItems(){
     // loop to count
         int count = 0;
